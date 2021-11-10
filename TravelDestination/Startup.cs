@@ -51,6 +51,7 @@ namespace TravelDestination
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Travel Destination API V");
+                c.RoutePrefix = string.Empty;
             });
 
             if (env.IsDevelopment())
