@@ -130,6 +130,6 @@ namespace TravelDestination.Controllers
       int count = _db.Reviews.Count();
       int index = new Random().Next(count);
       return _db.Reviews.Skip(index).FirstOrDefault();
-    }
+    } 
   }
 }
